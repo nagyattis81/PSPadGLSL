@@ -1,0 +1,47 @@
+;===============================================================================
+; PSPad clip definition file for GLSL
+;
+; Autor: Nagy Attila (aha)
+;===============================================================================
+
+
+[gl_FragColor | vec4]
+gl_FragColor
+[gl_ModelViewMatrix | mat4]
+gl_ModelViewMatrix
+[gl_Vertex | vec4]
+gl_Vertex
+[gl_NormalMatrix | mat3]
+gl_NormalMatrix
+[gl_Normal | vec3]
+gl_Normal
+[gl_Position | vec4]
+gl_Position
+[gl_FragDepth | float]
+gl_FragDepth
+[gl_FragData | gl_FragData]
+gl_FragData
+[gl_FrontMaterial | gl_FrontMaterial]
+gl_FrontMaterial
+[gl_FrontColor | vec4]
+gl_FrontColor
+[gl_MultiTexCoord0 | vec4]
+gl_MultiTexCoord0
+[gl_MultiTexCoord1 | vec4]
+gl_MultiTexCoord1
+[gl_MultiTexCoord2 | vec4]
+gl_MultiTexCoord2
+[gl_MultiTexCoord3 | vec4]
+gl_MultiTexCoord3
+[gl_MultiTexCoord4 | vec4]
+gl_MultiTexCoord4
+[gl_MultiTexCoord5 | vec4]
+gl_MultiTexCoord5
+[gl_MultiTexCoord6 | vec4]
+gl_MultiTexCoord6
+[gl_MultiTexCoord7 | vec4]
+gl_MultiTexCoord7
+[gl_Color | vec4]
+gl_Color
+[gl_TexCoord | gl_TexCoord]
+gl_TexCoord
