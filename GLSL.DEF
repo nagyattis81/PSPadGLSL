@@ -2,29 +2,18 @@
 ; PSPad clip definition file for GLSL
 ;
 ; Autor: Nagy Attila (aha)
+; https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.3.30.pdf
 ;===============================================================================
 
-
-[gl_FragColor | vec4]
-gl_FragColor
-[gl_ModelViewMatrix | mat4]
-gl_ModelViewMatrix
-[gl_Vertex | vec4]
-gl_Vertex
-[gl_NormalMatrix | mat3]
-gl_NormalMatrix
+; Compatibility Profile Vertex Shader Built-In Inputs
+[gl_Color | vec4]
+gl_Color
+[gl_SecondaryColor | vec4]
+gl_SecondaryColor
 [gl_Normal | vec3]
 gl_Normal
-[gl_Position | vec4]
-gl_Position
-[gl_FragDepth | float]
-gl_FragDepth
-[gl_FragData | gl_FragData]
-gl_FragData
-[gl_FrontMaterial | gl_FrontMaterial]
-gl_FrontMaterial
-[gl_FrontColor | vec4]
-gl_FrontColor
+[gl_Vertex | vec4]
+gl_Vertex
 [gl_MultiTexCoord0 | vec4]
 gl_MultiTexCoord0
 [gl_MultiTexCoord1 | vec4]
@@ -41,7 +30,127 @@ gl_MultiTexCoord5
 gl_MultiTexCoord6
 [gl_MultiTexCoord7 | vec4]
 gl_MultiTexCoord7
-[gl_Color | vec4]
-gl_Color
-[gl_TexCoord | gl_TexCoord]
+[gl_FogCoord | float]
+gl_FogCoord
+; Built-In Constants
+[gl_MaxVertexAttribs | int]
+gl_MaxVertexAttribs
+[gl_MaxVertexUniformComponents | int]
+gl_MaxVertexUniformComponents
+[gl_MaxVaryingFloats | int]
+gl_MaxVaryingFloats
+[gl_MaxVaryingComponents | int]
+gl_MaxVaryingComponents
+[gl_MaxVertexOutputComponents | int]
+gl_MaxVertexOutputComponents
+[gl_MaxGeometryInputComponents | int]
+gl_MaxGeometryInputComponents
+[gl_MaxGeometryOutputComponents | int]
+gl_MaxGeometryOutputComponents
+[gl_MaxFragmentInputComponents | int]
+gl_MaxFragmentInputComponents
+[gl_MaxVertexTextureImageUnits | int]
+gl_MaxVertexTextureImageUnits
+[gl_MaxCombinedTextureImageUnits | int]
+gl_MaxCombinedTextureImageUnits
+[gl_MaxTextureImageUnits | int]
+gl_MaxTextureImageUnits
+[gl_MaxFragmentUniformComponents | int]
+gl_MaxFragmentUniformComponents
+[gl_MaxDrawBuffers | int]
+gl_MaxDrawBuffers
+[gl_MaxClipDistances | int]
+gl_MaxClipDistances
+[gl_MaxGeometryTextureImageUnits | int]
+gl_MaxGeometryTextureImageUnits
+[gl_MaxGeometryOutputVertices | int]
+gl_MaxGeometryOutputVertices
+[gl_MaxGeometryTotalOutputComponents | int]
+gl_MaxGeometryTotalOutputComponents
+[gl_MaxGeometryUniformComponents | int]
+gl_MaxGeometryUniformComponents
+[gl_MaxGeometryVaryingComponents | int]
+gl_MaxGeometryVaryingComponents
+[gl_MaxTextureUnits | int]
+gl_MaxTextureUnits
+[gl_MaxTextureCoords | int]
+gl_MaxTextureCoords
+[gl_MaxClipPlanes | int]
+gl_MaxClipPlanes
+; Built-In Uniform State TODO
+[gl_ModelViewMatrix | mat4]
+gl_ModelViewMatrix
+[gl_ProjectionMatrix | mat4]
+gl_ProjectionMatrix
+[gl_ModelViewProjectionMatrix | mat4]
+gl_ModelViewProjectionMatrix
+[gl_TextureMatrix | mat4 array gl_MaxTextureCoords]
+gl_TextureMatrix
+[gl_NormalMatrix | mat3]
+gl_NormalMatrix
+[gl_ModelViewMatrixInverse | mat4]
+gl_ModelViewMatrixInverse
+[gl_ProjectionMatrixInverse | mat4]
+gl_ProjectionMatrixInverse
+[gl_ModelViewProjectionMatrixInverse | mat4]
+gl_ModelViewProjectionMatrixInverse
+[gl_TextureMatrixInverse | mat4 array]
+gl_TextureMatrixInverse
+[gl_ModelViewMatrixTranspose | mat4]
+gl_ModelViewMatrixTranspose
+[gl_ProjectionMatrixTranspose | mat4]
+gl_ProjectionMatrixTranspose
+[gl_ModelViewProjectionMatrixTranspose | mat4]
+gl_ModelViewProjectionMatrixTranspose
+[gl_TextureMatrixTranspose | mat4]
+gl_TextureMatrixTranspose
+[gl_ModelViewMatrixInverseTranspose | mat4]
+gl_ModelViewMatrixInverseTranspose
+[gl_ProjectionMatrixInverseTranspose | mat4]
+gl_ProjectionMatrixInverseTranspose
+[gl_ModelViewProjectionMatrixInverseTranspose | mat4]
+gl_ModelViewProjectionMatrixInverseTranspose
+[gl_TextureMatrixInverseTranspose | mat4]
+gl_TextureMatrixInverseTranspose
+[gl_NormalScale | float]
+gl_NormalScale
+[gl_ClipPlane | vec4 array gl_MaxClipPlanes]
+; Compatibility Profile State TODO
+; Compatibility Profile Vertex and Fragment Interface TODO
+; Fragment Shader Special Variables TODO
+[gl_FragColor | vec4]
+gl_FragColor
+[gl_Position | vec4]
+gl_Position
+[gl_FragDepth | float]
+gl_FragDepth
+[gl_FragData | vec4 array]
+gl_FragData
+[gl_FrontMaterial | gl_FrontMaterial]
+gl_FrontMaterial
+[gl_FrontMaterial.emission | vec4]
+gl_FrontMaterial.emission
+[gl_FrontMaterial.ambient | vec4]
+gl_FrontMaterial.ambient
+[gl_FrontMaterial.diffuse | vec4]
+gl_FrontMaterial.diffuse
+[gl_FrontMaterial.specular | vec4]
+gl_FrontMaterial.specular
+[gl_FrontMaterial.shininess | float]
+gl_FrontMaterial.shininess
+[gl_BackMaterial | gl_BackMaterial]
+gl_BackMaterial
+[gl_BackMaterial.emission | vec4]
+gl_BackMaterial.emission
+[gl_BackMaterial.ambient | vec4]
+gl_BackMaterial.ambient
+[gl_BackMaterial.diffuse | vec4]
+gl_BackMaterial.diffuse
+[gl_BackMaterial.specular | vec4]
+gl_BackMaterial.specular
+[gl_BackMaterial.shininess | float]
+gl_BackMaterial.shininess
+[gl_FrontColor | vec4]
+gl_FrontColor
+[gl_TexCoord | vec4 array]
 gl_TexCoord
