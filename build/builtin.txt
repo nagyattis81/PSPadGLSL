@@ -1,4 +1,3 @@
-;Compatibility Profile Vertex Shader Built-In Inputs
 gl_Color|vec4
 gl_SecondaryColor|vec4
 gl_Normal|vec3
@@ -12,7 +11,6 @@ gl_MultiTexCoord5|vec4
 gl_MultiTexCoord6|vec4
 gl_MultiTexCoord7|vec4
 gl_FogCoord|float
-;Built-In Constants
 gl_MaxVertexAttribs|int
 gl_MaxVertexUniformComponents|int
 gl_MaxVaryingFloats|int
@@ -35,7 +33,6 @@ gl_MaxGeometryVaryingComponents|int
 gl_MaxTextureUnits|int
 gl_MaxTextureCoords|int
 gl_MaxClipPlanes|int
-;Built-In Uniform State TODO
 gl_ModelViewMatrix|mat4
 gl_ProjectionMatrix|mat4
 gl_ModelViewProjectionMatrix|mat4
@@ -44,7 +41,7 @@ gl_NormalMatrix|mat3
 gl_ModelViewMatrixInverse|mat4
 gl_ProjectionMatrixInverse|mat4
 gl_ModelViewProjectionMatrixInverse|mat4
-gl_TextureMatrixInverse|mat4[]
+gl_TextureMatrixInverse|mat4[gl_MaxTextureCoords]
 gl_ModelViewMatrixTranspose|mat4
 gl_ProjectionMatrixTranspose|mat4
 gl_ModelViewProjectionMatrixTranspose|mat4
@@ -55,9 +52,6 @@ gl_ModelViewProjectionMatrixInverseTranspose|mat4
 gl_TextureMatrixInverseTranspose|mat4
 gl_NormalScale|float
 gl_ClipPlane|vec4[gl_MaxClipPlanes]
-;Compatibility Profile State TODO
-;Compatibility Profile Vertex and Fragment Interface TODO
-;Fragment Shader Special Variables TODO
 gl_FragColor|vec4
 gl_Position|vec4
 gl_FragDepth|float
@@ -75,4 +69,4 @@ gl_BackMaterial.diffuse|vec4
 gl_BackMaterial.specular|vec4
 gl_BackMaterial.shininess|float
 gl_FrontColor|vec4
-gl_TexCoord|vec4[]
+gl_TexCoord|vec4[gl_MaxTextureCoords]
