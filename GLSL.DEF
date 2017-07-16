@@ -4,8 +4,219 @@
 ; Autor: Nagy Attila (aha)
 ; https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.3.30.pdf
 ;===============================================================================
-
-; Compatibility Profile Vertex Shader Built-In Inputs
+;KeyWords
+[attribute | attribute]
+attribute
+[const | const]
+const
+[uniform | uniform]
+uniform
+[varying | varying]
+varying
+[layout | layout]
+layout
+[centroid | centroid]
+centroid
+[flat | flat]
+flat
+[smooth | smooth]
+smooth
+[noperspective | noperspective]
+noperspective
+[break | break]
+break
+[continue | continue]
+continue
+[do | do]
+do
+[for | for]
+for
+[while | while]
+while
+[switch | switch]
+switch
+[case | case]
+case
+[default | default]
+default
+[if | if]
+if
+[else | else]
+else
+[in | in]
+in
+[out | out]
+out
+[inout | inout]
+inout
+[true | true]
+true
+[false | false]
+false
+[invariant | invariant]
+invariant
+[discard | discard]
+discard
+[return | return]
+return
+[lowp | lowp]
+lowp
+[mediump | mediump]
+mediump
+[highp | highp]
+highp
+[precision | precision]
+precision
+[struct | struct]
+struct
+;Types
+[int | int]
+int
+[void | void]
+void
+[float | float]
+float
+[bool | bool]
+bool
+[mat2 | mat2]
+mat2
+[mat3 | mat3]
+mat3
+[mat4 | mat4]
+mat4
+[mat2x2 | mat2x2]
+mat2x2
+[mat2x3 | mat2x3]
+mat2x3
+[mat2x4 | mat2x4]
+mat2x4
+[mat3x2 | mat3x2]
+mat3x2
+[mat3x3 | mat3x3]
+mat3x3
+[mat3x4 | mat3x4]
+mat3x4
+[mat4x2 | mat4x2]
+mat4x2
+[mat4x3 | mat4x3]
+mat4x3
+[mat4x4 | mat4x4]
+mat4x4
+[vec2 | vec2]
+vec2
+[vec3 | vec3]
+vec3
+[vec4 | vec4]
+vec4
+[ivec2 | ivec2]
+ivec2
+[ivec3 | ivec3]
+ivec3
+[ivec4 | ivec4]
+ivec4
+[bvec2 | bvec2]
+bvec2
+[bvec3 | bvec3]
+bvec3
+[bvec4 | bvec4]
+bvec4
+[uint | uint]
+uint
+[uvec2 | uvec2]
+uvec2
+[uvec3 | uvec3]
+uvec3
+[uvec4 | uvec4]
+uvec4
+[sampler1D | sampler1D]
+sampler1D
+[sampler2D | sampler2D]
+sampler2D
+[sampler3D | sampler3D]
+sampler3D
+[samplerCube | samplerCube]
+samplerCube
+[sampler1DShadow | sampler1DShadow]
+sampler1DShadow
+[sampler2DShadow | sampler2DShadow]
+sampler2DShadow
+[samplerCubeShadow | samplerCubeShadow]
+samplerCubeShadow
+[sampler1DArray | sampler1DArray]
+sampler1DArray
+[sampler2DArray | sampler2DArray]
+sampler2DArray
+[sampler1DArrayShadow | sampler1DArrayShadow]
+sampler1DArrayShadow
+[sampler2DArrayShadow | sampler2DArrayShadow]
+sampler2DArrayShadow
+[isampler1D | isampler1D]
+isampler1D
+[isampler2D | isampler2D]
+isampler2D
+[isampler3D | isampler3D]
+isampler3D
+[isamplerCube | isamplerCube]
+isamplerCube
+[isampler1DArray | isampler1DArray]
+isampler1DArray
+[isampler2DArray | isampler2DArray]
+isampler2DArray
+[usampler1D | usampler1D]
+usampler1D
+[usampler2D | usampler2D]
+usampler2D
+[usampler3D | usampler3D]
+usampler3D
+[usamplerCube | usamplerCube]
+usamplerCube
+[usampler1DArray | usampler1DArray]
+usampler1DArray
+[usampler2DArray | usampler2DArray]
+usampler2DArray
+[sampler2DRect | sampler2DRect]
+sampler2DRect
+[sampler2DRectShadow | sampler2DRectShadow]
+sampler2DRectShadow
+[isampler2DRect | isampler2DRect]
+isampler2DRect
+[usampler2DRect | usampler2DRect]
+usampler2DRect
+[samplerBuffer | samplerBuffer]
+samplerBuffer
+[isamplerBuffer | isamplerBuffer]
+isamplerBuffer
+[usamplerBuffer | usamplerBuffer]
+usamplerBuffer
+[sampler2DMS | sampler2DMS]
+sampler2DMS
+[isampler2DMS | isampler2DMS]
+isampler2DMS
+[usampler2DMS | usampler2DMS]
+usampler2DMS
+[sampler2DMSArray | sampler2DMSArray]
+sampler2DMSArray
+[isampler2DMSArray | isampler2DMSArray]
+isampler2DMSArray
+[usampler2DMSArray | usampler2DMSArray]
+usampler2DMSArray
+[points | points]
+points
+[lines | lines]
+lines
+[lines_adjacency | lines_adjacency]
+lines_adjacency
+[triangles | triangles]
+triangles
+[triangles_adjacency | triangles_adjacency]
+triangles_adjacency
+[line_strip | line_strip]
+line_strip
+[triangle_strip | triangle_strip]
+triangle_strip
+[max_vertices | max_vertices]
+max_vertices
+;Built-In
 [gl_Color | vec4]
 gl_Color
 [gl_SecondaryColor | vec4]
@@ -32,7 +243,6 @@ gl_MultiTexCoord6
 gl_MultiTexCoord7
 [gl_FogCoord | float]
 gl_FogCoord
-; Built-In Constants
 [gl_MaxVertexAttribs | int]
 gl_MaxVertexAttribs
 [gl_MaxVertexUniformComponents | int]
@@ -77,14 +287,13 @@ gl_MaxTextureUnits
 gl_MaxTextureCoords
 [gl_MaxClipPlanes | int]
 gl_MaxClipPlanes
-; Built-In Uniform State TODO
 [gl_ModelViewMatrix | mat4]
 gl_ModelViewMatrix
 [gl_ProjectionMatrix | mat4]
 gl_ProjectionMatrix
 [gl_ModelViewProjectionMatrix | mat4]
 gl_ModelViewProjectionMatrix
-[gl_TextureMatrix | mat4 array gl_MaxTextureCoords]
+[gl_TextureMatrix | mat4 array(gl_MaxTextureCoords)]
 gl_TextureMatrix
 [gl_NormalMatrix | mat3]
 gl_NormalMatrix
@@ -94,7 +303,7 @@ gl_ModelViewMatrixInverse
 gl_ProjectionMatrixInverse
 [gl_ModelViewProjectionMatrixInverse | mat4]
 gl_ModelViewProjectionMatrixInverse
-[gl_TextureMatrixInverse | mat4 array]
+[gl_TextureMatrixInverse | mat4 array(gl_MaxTextureCoords)]
 gl_TextureMatrixInverse
 [gl_ModelViewMatrixTranspose | mat4]
 gl_ModelViewMatrixTranspose
@@ -114,17 +323,15 @@ gl_ModelViewProjectionMatrixInverseTranspose
 gl_TextureMatrixInverseTranspose
 [gl_NormalScale | float]
 gl_NormalScale
-[gl_ClipPlane | vec4 array gl_MaxClipPlanes]
-; Compatibility Profile State TODO
-; Compatibility Profile Vertex and Fragment Interface TODO
-; Fragment Shader Special Variables TODO
+[gl_ClipPlane | vec4 array(gl_MaxClipPlanes)]
+gl_ClipPlane
 [gl_FragColor | vec4]
 gl_FragColor
 [gl_Position | vec4]
 gl_Position
 [gl_FragDepth | float]
 gl_FragDepth
-[gl_FragData | vec4 array]
+[gl_FragData | vec4 array(gl_MaxDrawBuffers)]
 gl_FragData
 [gl_FrontMaterial | gl_FrontMaterial]
 gl_FrontMaterial
@@ -152,5 +359,232 @@ gl_BackMaterial.specular
 gl_BackMaterial.shininess
 [gl_FrontColor | vec4]
 gl_FrontColor
-[gl_TexCoord | vec4 array]
+[gl_TexCoord | vec4 array(gl_MaxTextureCoords)]
 gl_TexCoord
+[gl_in | array]
+gl_in
+;Functions
+[radians | radians]
+radians
+[degrees | degrees]
+degrees
+[sin | sin]
+sin
+[cos | cos]
+cos
+[tan | tan]
+tan
+[asin | asin]
+asin
+[acos | acos]
+acos
+[atan | atan]
+atan
+[sinh | sinh]
+sinh
+[cosh | cosh]
+cosh
+[tanh | tanh]
+tanh
+[asinh | asinh]
+asinh
+[acosh | acosh]
+acosh
+[atanh | atanh]
+atanh
+[pow | pow]
+pow
+[exp | exp]
+exp
+[log | log]
+log
+[exp2 | exp2]
+exp2
+[log2 | log2]
+log2
+[sqrt | sqrt]
+sqrt
+[inversesqrt | inversesqrt]
+inversesqrt
+[abs | abs]
+abs
+[sign | sign]
+sign
+[floor | floor]
+floor
+[trunc | trunc]
+trunc
+[round | round]
+round
+[roundEven | roundEven]
+roundEven
+[ceil | ceil]
+ceil
+[fract | fract]
+fract
+[mod | mod]
+mod
+[modf | modf]
+modf
+[min | min]
+min
+[max | max]
+max
+[clamp | clamp]
+clamp
+[step | step]
+step
+[smoothstep | smoothstep]
+smoothstep
+[isnan | isnan]
+isnan
+[isinf | isinf]
+isinf
+[floatBitsToInt | floatBitsToInt]
+floatBitsToInt
+[floatBitsToUint | floatBitsToUint]
+floatBitsToUint
+[intBitsToFloat | intBitsToFloat]
+intBitsToFloat
+[uintBitsToFloat | uintBitsToFloat]
+uintBitsToFloat
+[length | length]
+length
+[distance | distance]
+distance
+[dot | dot]
+dot
+[cross | cross]
+cross
+[normalize | normalize]
+normalize
+[ftransform | ftransform]
+ftransform
+[faceforward | faceforward]
+faceforward
+[reflect | reflect]
+reflect
+[refract | refract]
+refract
+[matrixCompMult | matrixCompMult]
+matrixCompMult
+[outerProduct | outerProduct]
+outerProduct
+[transpose | transpose]
+transpose
+[determinant | determinant]
+determinant
+[inverse | inverse]
+inverse
+[lessThan | lessThan]
+lessThan
+[lessThanEqual | lessThanEqual]
+lessThanEqual
+[greaterThan | greaterThan]
+greaterThan
+[greaterThanEqual | greaterThanEqual]
+greaterThanEqual
+[equal | equal]
+equal
+[notEqual | notEqual]
+notEqual
+[any | any]
+any
+[all | all]
+all
+[not | not]
+not
+[textureSize | textureSize]
+textureSize
+[texture | texture]
+texture
+[textureProj | textureProj]
+textureProj
+[textureLod | textureLod]
+textureLod
+[textureOffset | textureOffset]
+textureOffset
+[texelFetch | texelFetch]
+texelFetch
+[texelFetchOffset | texelFetchOffset]
+texelFetchOffset
+[textureProjOffset | textureProjOffset]
+textureProjOffset
+[textureLodOffset | textureLodOffset]
+textureLodOffset
+[textureProjLod | textureProjLod]
+textureProjLod
+[textureProjLodOffset | textureProjLodOffset]
+textureProjLodOffset
+[textureGrad | textureGrad]
+textureGrad
+[textureGradOffset | textureGradOffset]
+textureGradOffset
+[textureProjGrad | textureProjGrad]
+textureProjGrad
+[textureProjGradOffset | textureProjGradOffset]
+textureProjGradOffset
+[vec4 | vec4]
+vec4
+[texture1D | texture1D]
+texture1D
+[texture1DProj | texture1DProj]
+texture1DProj
+[texture1DLod | texture1DLod]
+texture1DLod
+[texture1DProjLod | texture1DProjLod]
+texture1DProjLod
+[texture2D | texture2D]
+texture2D
+[texture2DProj | texture2DProj]
+texture2DProj
+[texture2DLod | texture2DLod]
+texture2DLod
+[texture2DProjLod | texture2DProjLod]
+texture2DProjLod
+[texture3D | texture3D]
+texture3D
+[texture3DProj | texture3DProj]
+texture3DProj
+[texture3DLod | texture3DLod]
+texture3DLod
+[texture3DProjLod | texture3DProjLod]
+texture3DProjLod
+[textureCube | textureCube]
+textureCube
+[textureCubeLod | textureCubeLod]
+textureCubeLod
+[shadow1D | shadow1D]
+shadow1D
+[shadow2D | shadow2D]
+shadow2D
+[shadow1DProj | shadow1DProj]
+shadow1DProj
+[shadow2DProj | shadow2DProj]
+shadow2DProj
+[shadow1DLod | shadow1DLod]
+shadow1DLod
+[shadow2DLod | shadow2DLod]
+shadow2DLod
+[shadow1DProjLod | shadow1DProjLod]
+shadow1DProjLod
+[shadow2DProjLod | shadow2DProjLod]
+shadow2DProjLod
+[dFdx | dFdx]
+dFdx
+[dFdy | dFdy]
+dFdy
+[fwidth | fwidth]
+fwidth
+[noise1 | noise1]
+noise1
+[noise2 | noise2]
+noise2
+[noise3 | noise3]
+noise3
+[noise4 | noise4]
+noise4
+[EmitVertex | EmitVertex]
+EmitVertex
+[EndPrimitive | EndPrimitive]
+EndPrimitive

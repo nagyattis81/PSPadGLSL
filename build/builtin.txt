@@ -36,12 +36,12 @@ gl_MaxClipPlanes|int
 gl_ModelViewMatrix|mat4
 gl_ProjectionMatrix|mat4
 gl_ModelViewProjectionMatrix|mat4
-gl_TextureMatrix|mat4[gl_MaxTextureCoords]
+gl_TextureMatrix|mat4 array(gl_MaxTextureCoords)
 gl_NormalMatrix|mat3
 gl_ModelViewMatrixInverse|mat4
 gl_ProjectionMatrixInverse|mat4
 gl_ModelViewProjectionMatrixInverse|mat4
-gl_TextureMatrixInverse|mat4[gl_MaxTextureCoords]
+gl_TextureMatrixInverse|mat4 array(gl_MaxTextureCoords)
 gl_ModelViewMatrixTranspose|mat4
 gl_ProjectionMatrixTranspose|mat4
 gl_ModelViewProjectionMatrixTranspose|mat4
@@ -51,11 +51,11 @@ gl_ProjectionMatrixInverseTranspose|mat4
 gl_ModelViewProjectionMatrixInverseTranspose|mat4
 gl_TextureMatrixInverseTranspose|mat4
 gl_NormalScale|float
-gl_ClipPlane|vec4[gl_MaxClipPlanes]
+gl_ClipPlane|vec4 array(gl_MaxClipPlanes)
 gl_FragColor|vec4
 gl_Position|vec4
 gl_FragDepth|float
-gl_FragData|vec4[]
+gl_FragData|vec4 array(gl_MaxDrawBuffers)
 gl_FrontMaterial|gl_FrontMaterial
 gl_FrontMaterial.emission|vec4
 gl_FrontMaterial.ambient|vec4
@@ -69,4 +69,5 @@ gl_BackMaterial.diffuse|vec4
 gl_BackMaterial.specular|vec4
 gl_BackMaterial.shininess|float
 gl_FrontColor|vec4
-gl_TexCoord|vec4[gl_MaxTextureCoords]
+gl_TexCoord|vec4 array(gl_MaxTextureCoords)
+gl_in|array
