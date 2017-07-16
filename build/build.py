@@ -26,9 +26,14 @@ def write_file(type, title, fileName, fout):
 				fout.write(keyword + "=\n")
 
 def main():
+	import datetime
+	import time
+	ts = time.time()	
+	st = datetime.datetime.fromtimestamp(ts).strftime('%Y.%m.%d %H:%M:%S')
+
 	with open("GLSL.DEF") as fin:
 		with open("..\GLSL.DEF", "w") as fout:
-			fout.write(fin.read())
+			fout.write(fin.read().replace("{&DATE}", st))
 			write_file("def", ";KeyWords\n", 	"keywords.txt", fout)
 			write_file("def", ";Types\n",    	"types.txt",    fout)
 			write_file("def", ";Built-In\n", 	"builtin.txt",	fout)
@@ -36,7 +41,7 @@ def main():
 			
 	with open("GLSL.INI") as fin:
 		with open("..\GLSL.INI", "w") as fout:
-			fout.write(fin.read())
+			fout.write(fin.read().replace("{&DATE}", st))
 			write_file("ini", "[KeyWords]\n",      "keywords.txt", fout)
 			write_file("ini", "[ReservedWords]\n", "types.txt",    fout)
 			write_file("ini", "[KeyWords2]\n",     "builtin.txt",  fout)

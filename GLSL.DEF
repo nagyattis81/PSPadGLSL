@@ -1,7 +1,7 @@
 ;===============================================================================
 ; PSPad clip definition file for GLSL
-;
 ; Autor: Nagy Attila (aha)
+; Date: 2017.07.16 20:11:20
 ; https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.3.30.pdf
 ;===============================================================================
 ;KeyWords
@@ -217,6 +217,34 @@ triangle_strip
 [max_vertices | max_vertices]
 max_vertices
 ;Built-In
+[gl_VertexID | int]
+gl_VertexID
+[gl_InstanceID | int]
+gl_InstanceID
+[gl_in | array]
+gl_in
+[gl_PrimitiveIDIn | int]
+gl_PrimitiveIDIn
+[gl_PrimitiveID | int]
+gl_PrimitiveID
+[gl_Layer | int]
+gl_Layer
+[gl_FragCoord | vec4]
+gl_FragCoord
+[gl_FrontFacing | bool]
+gl_FrontFacing
+[gl_ClipDistance | float array]
+gl_ClipDistance
+[gl_FragColor | vec4]
+gl_FragColor
+[gl_FragData | vec4 array(gl_MaxDrawBuffers)]
+gl_FragData
+[gl_FragDepth | float]
+gl_FragDepth
+[gl_PointCoord | vec2]
+gl_PointCoord
+[gl_PrimitiveID | int]
+gl_PrimitiveID
 [gl_Color | vec4]
 gl_Color
 [gl_SecondaryColor | vec4]
@@ -287,6 +315,14 @@ gl_MaxTextureUnits
 gl_MaxTextureCoords
 [gl_MaxClipPlanes | int]
 gl_MaxClipPlanes
+[gl_DepthRange | gl_DepthRangeParameters]
+gl_DepthRange
+[gl_DepthRange.near | float]
+gl_DepthRange.near
+[gl_DepthRange.far | float]
+gl_DepthRange.far
+[gl_DepthRange.diff | float]
+gl_DepthRange.diff
 [gl_ModelViewMatrix | mat4]
 gl_ModelViewMatrix
 [gl_ProjectionMatrix | mat4]
@@ -325,14 +361,22 @@ gl_TextureMatrixInverseTranspose
 gl_NormalScale
 [gl_ClipPlane | vec4 array(gl_MaxClipPlanes)]
 gl_ClipPlane
-[gl_FragColor | vec4]
-gl_FragColor
-[gl_Position | vec4]
-gl_Position
-[gl_FragDepth | float]
-gl_FragDepth
-[gl_FragData | vec4 array(gl_MaxDrawBuffers)]
-gl_FragData
+[gl_Point | gl_PointParameters]
+gl_Point
+[gl_Point.size | gl_Point.size]
+gl_Point.size
+[gl_Point.sizeMin | gl_Point.sizeMin]
+gl_Point.sizeMin
+[gl_Point.sizeMax | gl_Point.sizeMax]
+gl_Point.sizeMax
+[gl_Point.fadeThresholdSize | gl_Point.fadeThresholdSize]
+gl_Point.fadeThresholdSize
+[gl_Point.distanceConstantAttenuation | gl_Point.distanceConstantAttenuation]
+gl_Point.distanceConstantAttenuation
+[gl_Point.distanceLinearAttenuation | gl_Point.distanceLinearAttenuation]
+gl_Point.distanceLinearAttenuation
+[gl_Point.distanceQuadraticAttenuation | gl_Point.distanceQuadraticAttenuation]
+gl_Point.distanceQuadraticAttenuation
 [gl_FrontMaterial | gl_FrontMaterial]
 gl_FrontMaterial
 [gl_FrontMaterial.emission | vec4]
@@ -357,12 +401,60 @@ gl_BackMaterial.diffuse
 gl_BackMaterial.specular
 [gl_BackMaterial.shininess | float]
 gl_BackMaterial.shininess
+[gl_LightSource | gl_LightSourceParameters array(gl_MaxLights)]
+gl_LightSource
+[gl_LightModel | gl_LightModelParameters]
+gl_LightModel
+[gl_FrontLightModelProduct | gl_LightModelProducts]
+gl_FrontLightModelProduct
+[gl_BackLightModelProduct | gl_LightModelProducts]
+gl_BackLightModelProduct
+[gl_FrontLightProduct | gl_LightProducts array(gl_MaxLights)]
+gl_FrontLightProduct
+[gl_BackLightProduct | gl_LightProducts array(gl_MaxLights)]
+gl_BackLightProduct
+[gl_TextureEnvColor | vec4 array(gl_MaxTextureUnits)]
+gl_TextureEnvColor
+[gl_EyePlaneS | vec4 array(gl_MaxTextureUnits)]
+gl_EyePlaneS
+[gl_EyePlaneT | vec4 array(gl_MaxTextureUnits)]
+gl_EyePlaneT
+[gl_EyePlaneR | vec4 array(gl_MaxTextureUnits)]
+gl_EyePlaneR
+[gl_EyePlaneQ | vec4 array(gl_MaxTextureUnits)]
+gl_EyePlaneQ
+[gl_ObjectPlaneS | vec4 array(gl_MaxTextureUnits)]
+gl_ObjectPlaneS
+[gl_ObjectPlaneT | vec4 array(gl_MaxTextureUnits)]
+gl_ObjectPlaneT
+[gl_ObjectPlaneR | vec4 array(gl_MaxTextureUnits)]
+gl_ObjectPlaneR
+[gl_ObjectPlaneQ | vec4 array(gl_MaxTextureUnits)]
+gl_ObjectPlaneQ
+[gl_Fog | gl_FogParameters]
+gl_Fog
+[gl_Fog.color | gl_Fog.color]
+gl_Fog.color
+[gl_Fog.density | gl_Fog.density]
+gl_Fog.density
+[gl_Fog.start | gl_Fog.start]
+gl_Fog.start
+[gl_Fog.end | gl_Fog.end]
+gl_Fog.end
+[gl_Fog.scale | gl_Fog.scale]
+gl_Fog.scale
 [gl_FrontColor | vec4]
 gl_FrontColor
+[gl_BackColor | vec4]
+gl_BackColor
+[gl_FrontSecondaryColor | vec4]
+gl_FrontSecondaryColor
+[gl_BackSecondaryColor | vec4]
+gl_BackSecondaryColor
 [gl_TexCoord | vec4 array(gl_MaxTextureCoords)]
 gl_TexCoord
-[gl_in | array]
-gl_in
+[gl_Position | vec4]
+gl_Position
 ;Functions
 [radians | radians]
 radians

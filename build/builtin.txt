@@ -1,3 +1,20 @@
+gl_VertexID|int
+gl_InstanceID|int
+
+gl_in|array
+gl_PrimitiveIDIn|int
+gl_PrimitiveID|int
+gl_Layer|int
+
+gl_FragCoord|vec4
+gl_FrontFacing|bool
+gl_ClipDistance|float array
+gl_FragColor|vec4
+gl_FragData|vec4 array(gl_MaxDrawBuffers)
+gl_FragDepth|float
+gl_PointCoord|vec2
+gl_PrimitiveID|int
+
 gl_Color|vec4
 gl_SecondaryColor|vec4
 gl_Normal|vec3
@@ -11,6 +28,7 @@ gl_MultiTexCoord5|vec4
 gl_MultiTexCoord6|vec4
 gl_MultiTexCoord7|vec4
 gl_FogCoord|float
+
 gl_MaxVertexAttribs|int
 gl_MaxVertexUniformComponents|int
 gl_MaxVaryingFloats|int
@@ -33,6 +51,12 @@ gl_MaxGeometryVaryingComponents|int
 gl_MaxTextureUnits|int
 gl_MaxTextureCoords|int
 gl_MaxClipPlanes|int
+
+gl_DepthRange|gl_DepthRangeParameters
+gl_DepthRange.near|float
+gl_DepthRange.far|float
+gl_DepthRange.diff|float
+
 gl_ModelViewMatrix|mat4
 gl_ProjectionMatrix|mat4
 gl_ModelViewProjectionMatrix|mat4
@@ -52,10 +76,16 @@ gl_ModelViewProjectionMatrixInverseTranspose|mat4
 gl_TextureMatrixInverseTranspose|mat4
 gl_NormalScale|float
 gl_ClipPlane|vec4 array(gl_MaxClipPlanes)
-gl_FragColor|vec4
-gl_Position|vec4
-gl_FragDepth|float
-gl_FragData|vec4 array(gl_MaxDrawBuffers)
+
+gl_Point|gl_PointParameters
+gl_Point.size
+gl_Point.sizeMin
+gl_Point.sizeMax
+gl_Point.fadeThresholdSize
+gl_Point.distanceConstantAttenuation
+gl_Point.distanceLinearAttenuation
+gl_Point.distanceQuadraticAttenuation
+
 gl_FrontMaterial|gl_FrontMaterial
 gl_FrontMaterial.emission|vec4
 gl_FrontMaterial.ambient|vec4
@@ -68,6 +98,35 @@ gl_BackMaterial.ambient|vec4
 gl_BackMaterial.diffuse|vec4
 gl_BackMaterial.specular|vec4
 gl_BackMaterial.shininess|float
+
+gl_LightSource|gl_LightSourceParameters array(gl_MaxLights)
+gl_LightModel|gl_LightModelParameters
+gl_FrontLightModelProduct|gl_LightModelProducts
+gl_BackLightModelProduct|gl_LightModelProducts
+gl_FrontLightProduct|gl_LightProducts array(gl_MaxLights)
+gl_BackLightProduct|gl_LightProducts array(gl_MaxLights)
+
+gl_TextureEnvColor|vec4 array(gl_MaxTextureUnits)
+gl_EyePlaneS|vec4 array(gl_MaxTextureUnits)
+gl_EyePlaneT|vec4 array(gl_MaxTextureUnits)
+gl_EyePlaneR|vec4 array(gl_MaxTextureUnits)
+gl_EyePlaneQ|vec4 array(gl_MaxTextureUnits)
+gl_ObjectPlaneS|vec4 array(gl_MaxTextureUnits)
+gl_ObjectPlaneT|vec4 array(gl_MaxTextureUnits)
+gl_ObjectPlaneR|vec4 array(gl_MaxTextureUnits)
+gl_ObjectPlaneQ|vec4 array(gl_MaxTextureUnits)
+
+gl_Fog|gl_FogParameters
+gl_Fog.color
+gl_Fog.density
+gl_Fog.start
+gl_Fog.end
+gl_Fog.scale
+
 gl_FrontColor|vec4
+gl_BackColor|vec4
+gl_FrontSecondaryColor|vec4
+gl_BackSecondaryColor|vec4
+
 gl_TexCoord|vec4 array(gl_MaxTextureCoords)
-gl_in|array
+gl_Position|vec4
